@@ -17,17 +17,32 @@ Ext.define('ThemeDemo.view.Main', {
                 styleHtmlContent: true,
                 scrollable: true,
 
-                items: {
+                layout: {
+                    type: 'vbox',
+                    align: 'stretch',
+                    pack: 'center'
+                },
+                defaults: {
+                    xtype: 'button',
+                    margin: '4 0'
+                },
+                items: [{
                     docked: 'top',
                     xtype: 'titlebar',
                     title: 'Welcome to Sencha Touch 2'
-                },
-
-                html: [
-                    "You've just generated a new Sencha Touch 2 project. What you're looking at right now is the ",
-                    "contents of <a target='_blank' href=\"app/view/Main.js\">app/view/Main.js</a> - edit that file ",
-                    "and refresh to change what's rendered here."
-                ].join("")
+                },{
+                    text: 'Default theme',
+                    handler: function() {window.location.assign(location.pathname)}
+                },{
+                    text: 'Windows phone theme',
+                    handler: function() {window.location.assign(location.pathname+'?platform=ie10')}
+                },{
+                    text: 'Blackberry theme',
+                    handler: function() {window.location.assign(location.pathname+'?platform=blackberry')}
+                },{
+                    text: 'Base demo theme',
+                    handler: function() {window.location.assign(location.pathname+'?platform=demo')}
+                }]
             },
             {
                 xtype: 'demolist',
