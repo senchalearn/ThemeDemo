@@ -1,0 +1,16 @@
+.x-button {
+  @include transition(all .1s ease);
+  @include border-radius(50px);
+  margin-bottom: 15px;
+  font-size: 15px;
+  background: lighten($baseColor, 10);
+  border: none;
+  color: white;
+  text-decoration: none;
+  .x-button-label {
+    padding: 10px 0;
+  }
+  &.x-button-pressing {
+    background: darken($baseColor, 10);
+  }
+}
