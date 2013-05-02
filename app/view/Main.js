@@ -3,7 +3,7 @@ Ext.define('ThemeDemo.view.Main', {
     xtype: 'main',
     requires: [
         'Ext.TitleBar',
-        'Ext.Video'
+        'ThemeDemo.view.FormPanel'
     ],
     config: {
         tabBarPosition: 'bottom',
@@ -34,7 +34,7 @@ Ext.define('ThemeDemo.view.Main', {
                 title: 'List'
             },
             {
-                xtype: 'panel',
+                xtype: 'demoform',
                 iconCls: 'compose',
                 title: 'Form'
             }
