@@ -3,7 +3,8 @@ Ext.define('ThemeDemo.view.Main', {
     xtype: 'main',
     requires: [
         'Ext.TitleBar',
-        'ThemeDemo.view.FormPanel'
+        'ThemeDemo.view.FormPanel',
+        'ThemeDemo.view.List'
     ],
     config: {
         tabBarPosition: 'bottom',
@@ -29,7 +30,7 @@ Ext.define('ThemeDemo.view.Main', {
                 ].join("")
             },
             {
-                xtype: 'panel',
+                xtype: 'demolist',
                 iconCls: 'list',
                 title: 'List'
             },

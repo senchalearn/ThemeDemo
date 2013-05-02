@@ -30,6 +30,7 @@ Ext.application({
     views: [
         'Main'
     ],
+    stores: ['Contacts'],
 
     icon: {
         '57': 'resources/icons/Icon.png',
