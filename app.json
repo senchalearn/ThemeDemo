@@ -73,6 +73,11 @@
             "theme": "Default",
             "update": "delta"
         },
+        { "path": "resources/css/demo.css",
+            "platform": ["demo"],
+            "theme": "Demo",
+            "update": "delta"
+        },
         {
             "path": "resources/css/wp.css",
             "platform": ["ie10"],
